@@ -2,42 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Scott's Coffee</title>
     <link rel="stylesheet" href="style.css">
+
 </head>
 <body>
 
 <!--    TODO: Center heading and add global font-->
-    <h1>Coffee!</h1>
+<div class="heading container-fluid">
+    <div class="row">
+        <h1 class="d-flex justify-content-center">Coffee!</h1>
+    </div>
+</div>
 <!--    TODO: add hr element to span ~90% of page-->
-<!--    TODO: need to push form right and add search for roast-->
-    <form>
-        <label for="roast-selection"></label>
-        <select id="roast-selection">
-            <option>light</option>
-            <option>medium</option>
-            <option>dark</option>
-            <option selected>all</option>
-        </select>
-<!--        TODO: add button to submit-->
-        <input id="submit" type="submit" />
-    </form>
-<!--    TODO: Add a coffee section heading-->
-<!--        TODO: add selector with label to choose roast-->
-<!--        TODO: add text input with label to allow user to add coffee-->
+<div class="heading-divider">
+    <hr>
+</div>
 
-<!--    TODO: Modify table into a card array that filters search result based on user input-->
-    <table>
-        <thead>
+<div class="java-search container">
+    <div class="java-search row">
+        <!--    TODO: Modify table into a card array that filters search result based on user input-->
+        <table class="java-display col-5">
+            <thead>
             <tr>
                 <th>ID</th>
                 <th>NAME</th>
                 <th>ROAST</th>
             </tr>
-        </thead>
-        <tbody id="coffees"></tbody>
-    </table>
+            </thead>
+            <tbody id="coffees"></tbody>
+        </table>
+        <!--    TODO: need to push form right and add search for roast-->
+        <div class="roast-search-tool col-5">
+            <form class="roast-selector row">
+                <label for="roast-selection">Roast</label>
+                <select class="custom-select col-11" id="roast-selection">
+                    <option selected>all</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <!--        TODO: add button to submit-->
+                <button class="btn btn-primary col-11" type="submit">Submit</button>
+            </form>
+        </div>
+        <!--    TODO: Add a coffee section heading-->
+        <!--        TODO: add selector with label to choose roast-->
+        <!--        TODO: add text input with label to allow user to add coffee-->
+    </div>
 
-    <script src="main.js"></script>
+</div>
+<script src="main.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
 </body>
 </html>

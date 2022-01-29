@@ -1,9 +1,37 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 table {
     border-collapse: collapse;
     margin: 15px 0;
 }
 
 td, th {
-    border: 1px solid black;
+    border: 1px solid darkgrey;
     padding: 5px 10px;
+}
+.heading-divider {
+    display: flex;
+    justify-content: center;
+}
+hr {
+    width: 90%;
+    color: rgba(185, 185, 185, .1);
+}
+.java-search {
+    padding: 1em;
+}
+.java-display {
+}
+label {
+    font-weight: bold;
+    padding-left: 0;
+}
+#roast-selection {
+    margin: .5em 0;
+}
+#submit {
+    padding: 2px;
+    background-color: dodgerblue;
 }
