@@ -66,12 +66,14 @@ var coffees = [
 
 //var tbody = document.querySelector('#coffees');
 //var submitButton = document.querySelector('#submit');
+
 var roastSelection = document.querySelector('#roast-selection');
-var roastSelected = roastSelection.value
+var roastSelected = roastSelection.;
+
 var searchByName = document.querySelector('#search');
 var searchString = searchByName.value;
-var roastResults = document.querySelector('#roast-results');
 
+var roastResults = document.querySelector('#roast-results');
 roastResults.innerHTML = renderCoffees(coffees);
 
 roastSelection.addEventListener('changed', updateCoffees);
