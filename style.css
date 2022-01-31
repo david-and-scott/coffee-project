@@ -35,4 +35,12 @@ label {
     padding: 2px;
     background-color: dodgerblue;
 }
-
+.roast-title {
+    font-size: 2em;
+    font-weight: bolder;
+}
+.roast-subtitle {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1em;
+}
