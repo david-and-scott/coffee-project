@@ -19,7 +19,7 @@ function renderCoffees(coffees) {
 }
 
 function updateCoffees(e) {
-    e.preventDefault(); // don't submit the form, we just want to update the data
+    //e.preventDefault(); // don't submit the form, we just want to update the data
     var selectedRoast = roastSelection.value;
     var filteredCoffees = [];
 
@@ -64,13 +64,15 @@ var coffees = [
     {id: 14, name: 'French', roast: 'dark'},
 ];
 
-var tbody = document.querySelector('#coffees');
+//var tbody = document.querySelector('#coffees');
 //var submitButton = document.querySelector('#submit');
 var roastSelection = document.querySelector('#roast-selection');
+var roastSelected = roastSelection.value
 var searchByName = document.querySelector('#search');
 var searchString = searchByName.value;
+var roastResults = document.querySelector('#roast-results');
 
-tbody.innerHTML = renderCoffees(coffees);
+roastResults.innerHTML = renderCoffees(coffees);
 
 roastSelection.addEventListener('changed', updateCoffees);
-searchByName.addEventListener('keydown',)
+searchByName.addEventListener('keydown',searchFilter)

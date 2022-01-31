@@ -12,9 +12,7 @@
 <body>
 
 <div class="container">
-    <div class="row">
-        <h1>Coffee!</h1>
-    </div>
+    <h1 class="text-center fw-bolder">Coffee!</h1>
 </div>
 
 <div class="heading-divider">
@@ -23,44 +21,45 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class=" col-6 d-flex ">
+        <div id="roast-results" class="col-6 grid">
 
-            <div class="roast col-6">
+            <div class="g-col-3 d-inline d-block">
                 <span class="roast-title">French</span>
                 <span class="roast-subtitle ml-1 text-muted">dark</span>
             </div>
 
-            <div class="roast col-6">
+            <div class="g-col-3 d-inline d-block">
                 <span class="roast-title">Italian</span>
                 <span class="roast-subtitle ml-1 text-muted">dark</span>
             </div>
 
-            <div class="roast col-6">
+            <div class="g-col-3 d-inline d-block">
                 <span class="roast-title">American</span>
                 <span class="roast-subtitle ml-1 text-muted">medium</span>
             </div>
         </div>
-    </div>
 
-    <div id="pick-roast" class="col-6">
-        <div class="row">
-            <label for="roast-selection">Roasting type:</label>
-            <select class="custom-select col-11" id="roast-selection">
-                <option selected>all</option>
-                <option>light</option>
-                <option>medium</option>
-                <option>dark</option>
-            </select>
-            <br/>
-            <label for="search">Search by name:</label>
-            <br/>
-            <input id="search" type="text" class="col-11">
-            <br/>
-            <button type="button" class="btn btn-primary col-11">Roast Me!</button>
+
+        <div id="pick-roast" class="col-6">
+            <div class="row">
+                <label for="roast-selection">Roasting type:</label>
+                <select class="custom-select col-11" id="roast-selection">
+                    <option selected>all</option>
+                    <option>light</option>
+                    <option>medium</option>
+                    <option>dark</option>
+                </select>
+                <br/>
+                <label for="search">Search by name:</label>
+                <br/>
+                <input id="search" type="text" class="col-11">
+                <br/>
+                <button type="button" class="btn btn-primary col-11">Roast Me!</button>
+            </div>
         </div>
     </div>
 </div>
-</div>
+
 
 <script src="main.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
