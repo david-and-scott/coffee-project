@@ -2,8 +2,8 @@
 
 function renderCoffee(coffeeName,coffeeRoast) {
     var html = '';
-    var roastDef = '<div class="col-sm-6 col-xs-12">';
-    var roastTitleDef = '<span class="roast-title">';
+    var roastDef = '<div class="col-md-6 col-12">';
+    var roastTitleDef = '<span class="roast-title float-md-left">';
     var roastSubtitleDef = '<span class="roast-subtitle ml-1 text-muted">';
 
     html += roastDef + roastTitleDef + coffeeName + '</span>';
