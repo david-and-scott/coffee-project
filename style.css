@@ -12,6 +12,9 @@
     padding: 0;
 }
 
+body {
+    background-image: url("img/coffeebeans.jpg");
+}
 h1 {
     font-family: "JetBrains Mono", "Comic Sans MS", sans-serif;
     font-weight: bolder;
@@ -58,7 +61,7 @@ label {
 }
 
 .ethics-statement {
-    font-family: Avenir;
+    font-family: Avenir, sans-serif;
     color: dodgerblue;
     font-style: italic;
 }
