@@ -1,19 +1,16 @@
-/*table {*/
-/*    border-collapse: collapse;*/
-/*    margin: 15px 0;*/
-/*}*/
 
-/*td, th {*/
-/*    border: 1px solid black;*/
-/*    padding: 5px 10px;*/
-/*}*/
 * {
     margin: 0;
     padding: 0;
 }
+<<<<<<< HEAD
 
 body {
     background-image: url("img/coffeebeans.jpg");
+=======
+body {
+    background-image: url("coffeebeans.jpg");
+>>>>>>> c536dd80bbf3570822e876ea18fd59eaadbe2dc2
 }
 h1 {
     font-family: "JetBrains Mono", "Comic Sans MS", sans-serif;
@@ -65,3 +62,8 @@ label {
     color: dodgerblue;
     font-style: italic;
 }
+/*@media screen and (max-width:676px) {*/
+/*    .roast-subtitle {*/
+/*        overflow-wrap: break-word;*/
+/*    }*/
+/*}*/
