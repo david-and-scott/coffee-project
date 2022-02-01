@@ -12,9 +12,7 @@
 <body>
 
 <div class="container">
-    <div class="row">
-        <h1>Coffee!</h1>
-    </div>
+    <h1 class="d-flex justify-content-center">Coffee!</h1>
 </div>
 
 <div class="heading-divider">
@@ -23,46 +21,49 @@
 
 <div class="container-fluid">
     <div class="row">
-        <div class=" col-6 d-flex ">
+        <div class="roast-list col-7">
+            <div class="container">
+                <div id="coffees" class="row">
 
-            <div class="roast col-6">
-                <span class="roast-title">French</span>
-                <span class="roast-subtitle ml-1 text-muted">dark</span>
-            </div>
-
-            <div class="roast col-6">
-                <span class="roast-title">Italian</span>
-                <span class="roast-subtitle ml-1 text-muted">dark</span>
-            </div>
-
-            <div class="roast col-6">
-                <span class="roast-title">American</span>
-                <span class="roast-subtitle ml-1 text-muted">medium</span>
+                </div>
             </div>
         </div>
-    </div>
 
-    <div id="pick-roast" class="col-6">
-        <div class="row">
-            <label for="roast-selection">Roasting type:</label>
-            <select class="custom-select col-11" id="roast-selection">
-                <option selected>all</option>
-                <option>light</option>
+        <div id="pick-roast" class="roast-search col-5">
+            <!--                <form id="roast-search">-->
+            <label for="roast-selection1">Roasting type:</label>
+            <select class="custom-select col-11" id="roast-selection1">
+                <option selected value="all">all</option>
+                <option value="light">light</option>
+                <option value="medium">medium</option>
+                <option value="dark">dark</option>
+            </select>
+            <label for="search1">Search by name:</label>
+            <input id="search1" type="text" class="col-11">
+            <!--                    <button type="submit" id="submit" class="btn btn-primary col-11">Roast Me!</button>-->
+            <!--                </form>-->
+            <hr>
+            <!--                <form id="add-roast">-->
+            <h2 class="d-flex justify-content-center">Add a Coffee</h2>
+            <label for="roast-selection2">Roasting type:</label>
+            <select class="custom-select col-11" id="roast-selection2">
+                <option selected>light</option>
                 <option>medium</option>
                 <option>dark</option>
             </select>
-            <br/>
-            <label for="search">Search by name:</label>
-            <br/>
-            <input id="search" type="text" class="col-11">
-            <br/>
+            <label for="search2">Name:</label>
+            <input id="search2" type="text" class="col-11">
             <button type="button" class="btn btn-primary col-11">Roast Me!</button>
+            <!--                </form>-->
         </div>
+
+
     </div>
 </div>
-</div>
+
 
 <script src="main.js"></script>
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>

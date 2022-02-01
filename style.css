@@ -31,9 +31,8 @@ label {
 #roast-selection {
     margin: .5em 0;
 }
-#submit {
-    padding: 2px;
-    background-color: dodgerblue;
+#search {
+    margin: .5em 0;
 }
 .roast-title {
     font-size: 2em;
@@ -43,4 +42,16 @@ label {
     font-weight: bold;
     font-style: italic;
     font-size: 1em;
+}
+button {
+    margin: .5em 0;
+}
+.coffeeName {
+    font-size: 2em;
+    font-weight: bolder;
+}
+.roastType {
+    font-size: 1em;
+    font-weight: bold;
+    margin-left: .25em;
 }
