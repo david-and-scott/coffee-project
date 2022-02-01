@@ -11,9 +11,9 @@
 </head>
 <body>
 
-<div class="container">
+<div class="container bg-white border border-3 border-dark mt-3">
     <h1 class="d-flex justify-content-center">Coffee!</h1>
-    <p class="d-flex justify-content-center ethics-statement">All our whole-bean coffees are ethically sourced from growers' cooperatives
+    <p class="d-flex justify-content-center text-center ethics-statement">All our whole-bean coffees are ethically sourced from growers' cooperatives
         in Kenya.</p>
 </div>
 
@@ -22,14 +22,10 @@
 </div>
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="roast-list container col-sm-6 col-xs-12">
-            <div id="roast-results" class="row">
+    <div class="row d-flex ml-3">
 
-            </div>
-        </div>
 
-        <div id="pick-roast" class="roast-search col-6">
+        <div id="pick-roast" class="roast-search mb-2 col-sm-6 col-12 order-sm-2 mr-1 bg-white border-3 border border-dark pb-3">
             <form id="roast-search">
                 <label for="roast-selection1">Roasting type:</label>
                 <select class="custom-select col-11" id="roast-selection1">
@@ -39,7 +35,7 @@
                     <option value="dark">dark</option>
                 </select>
                 <label for="search1">Search by name:</label>
-                <input id="search1" type="text" class="col-11">
+                <input id="search1" type="text" class="col-11 mb-2 rounded">
                 <button id="roast-me" type="button" class="btn btn-primary col-11">Roast Me!</button>
             </form>
             <hr>
@@ -52,11 +48,16 @@
                     <option>dark</option>
                 </select>
                 <label for="search2">Add a new roast:</label>
-                <input id="search2" type="text" class="col-11">
+                <input id="search2" type="text" class="col-11 mb-2 rounded">
                 <button type="button" id="add-button" class="btn btn-primary col-11">Add a New Coffee!</button>
             </form>
         </div>
 
+        <div class="roast-list container col-sm-5 col-xs-12 order-sm-1 bg-white border border-3 border-dark ml-1">
+            <div id="roast-results" class="row">
+
+            </div>
+        </div>
 
     </div>
 </div>
