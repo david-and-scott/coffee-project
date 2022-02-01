@@ -1,0 +1,63 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-image: url("coffeebeans.jpg");
+}
+h1 {
+    font-family: "JetBrains Mono", "Comic Sans MS", sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: darkred;
+}
+
+#heading-divider {
+    display: flex;
+    justify-content: center;
+}
+hr {
+    width: 90%;
+    color: rgba(185, 185, 185, .1);
+}
+.java-search {
+    padding: 1em;
+}
+.java-display {
+}
+label {
+    font-weight: bold;
+    padding-left: 0;
+}
+#roast-selection {
+    margin: .5em 0;
+}
+#submit {
+    padding: 2px;
+    background-color: dodgerblue;
+}
+
+.roast {
+
+}
+.roast-title {
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+.roast-subtitle {
+    font-weight: bold;
+    font-style: italic;
+    font-size: .7em;
+}
+
+.ethics-statement {
+    font-family: Avenir;
+    color: dodgerblue;
+    font-style: italic;
+}
+/*@media screen and (max-width:676px) {*/
+/*    .roast-subtitle {*/
+/*        overflow-wrap: break-word;*/
+/*    }*/
+/*}*/
