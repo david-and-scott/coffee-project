@@ -12,6 +12,12 @@
     padding: 0;
 }
 
+h1 {
+    font-family: "JetBrains Mono", "Comic Sans MS", sans-serif;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: darkred;
+}
 
 .heading-divider {
     display: flex;
@@ -49,4 +55,10 @@ label {
     font-weight: bold;
     font-style: italic;
     font-size: .7em;
+}
+
+.ethics-statement {
+    font-family: Avenir;
+    color: dodgerblue;
+    font-style: italic;
 }
