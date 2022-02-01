@@ -2,7 +2,7 @@
 
 function renderCoffee(coffeeName,coffeeRoast) {
     var html = '';
-    var roastDef = '<div class="col-6 col-xs-12">';
+    var roastDef = '<div class="col-sm-6 col-xs-12">';
     var roastTitleDef = '<span class="roast-title">';
     var roastSubtitleDef = '<span class="roast-subtitle ml-1 text-muted">';
 
@@ -54,41 +54,53 @@ function searchFilter() {
         if (coffees[i].name.toUpperCase().includes(searchUC)) {
             filteredCoffees.push(coffees[i]);
         }
-    };
+    }
     return renderCoffees(filteredCoffees);
 }
 
 function addCoffee(e) {
     var newCoffeeName = coffeeToAdd.value;
     var newCoffeeType = newRoastSelection.value;
-    var newCoffeeID = coffees.length;
+    var newCoffeeID = coffees.length + 1;
     var updatedList = '';
     if (newCoffeeName.length === 0) {
         e.preventDefault();
     } else {
-        coffees.push(newCoffeeName,newCoffeeID,newCoffeeType);
+        var newCoffeeElement = {
+            id: newCoffeeID, name: newCoffeeName, roast: newCoffeeType
+        }
+        coffees.push(newCoffeeElement);
+        window.localStorage.setItem("coffeeList",JSON.stringify(coffees));
     }
     updatedList = updateCoffees();
     roastResults.innerHTML = updatedList;
 }
-// from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
-var coffees = [
-    {id: 1, name: 'Light City', roast: 'light'},
-    {id: 2, name: 'Half City', roast: 'light'},
-    {id: 3, name: 'Cinnamon', roast: 'light'},
-    {id: 4, name: 'City', roast: 'medium'},
-    {id: 5, name: 'American', roast: 'medium'},
-    {id: 6, name: 'Breakfast', roast: 'medium'},
-    {id: 7, name: 'High', roast: 'dark'},
-    {id: 8, name: 'Continental', roast: 'dark'},
-    {id: 9, name: 'New Orleans', roast: 'dark'},
-    {id: 10, name: 'European', roast: 'dark'},
-    {id: 11, name: 'Espresso', roast: 'dark'},
-    {id: 12, name: 'Viennese', roast: 'dark'},
-    {id: 13, name: 'Italian', roast: 'dark'},
-    {id: 14, name: 'French', roast: 'dark'},
-];
 
+function getStoredCoffees() {
+    if (lotsOfCoffee) {
+        coffees = lotsOfCoffee;
+    } else if (!lotsOfCoffee) {
+        coffees = [
+            {id: 1, name: 'Light City', roast: 'light'},
+            {id: 2, name: 'Half City', roast: 'light'},
+            {id: 3, name: 'Cinnamon', roast: 'light'},
+            {id: 4, name: 'City', roast: 'medium'},
+            {id: 5, name: 'American', roast: 'medium'},
+            {id: 6, name: 'Breakfast', roast: 'medium'},
+            {id: 7, name: 'High', roast: 'dark'},
+            {id: 8, name: 'Continental', roast: 'dark'},
+            {id: 9, name: 'New Orleans', roast: 'dark'},
+            {id: 10, name: 'European', roast: 'dark'},
+            {id: 11, name: 'Espresso', roast: 'dark'},
+            {id: 12, name: 'Viennese', roast: 'dark'},
+            {id: 13, name: 'Italian', roast: 'dark'},
+            {id: 14, name: 'French', roast: 'dark'},
+        ]
+    }
+}
+// from http://www.ncausa.org/About-Coffee/Coffee-Roasts-Guide
+var coffees = [];
+getStoredCoffees();
 //var tbody = document.querySelector('#coffees');
 //var submitButton = document.querySelector('#submit');
 
@@ -99,7 +111,7 @@ var coffeeToAdd = document.querySelector('#search2');
 var roastResults = document.querySelector('#roast-results');
 var filterButton = document.querySelector('#roast-me');
 var addButton = document.querySelector('#add-button');
-
+var lotsOfCoffee = JSON.parse(localStorage.getItem("coffeeList"));
 roastResults.innerHTML = updateCoffees();
 
 //EventListeners
