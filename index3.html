@@ -22,11 +22,11 @@
 </div>
 
 <div class="container-fluid">
-    <div class="row d-flex ml-3">
+    <div class="row d-flex ml-3 justify-content-center">
 
 
-        <div id="pick-roast" class="roast-search mb-2 col-sm-6 col-12 order-sm-2 mr-1 bg-white border-3 border border-dark pb-3">
-            <form id="roast-search">
+        <div id="pick-roast" class="roast-search mb-2 mb-sm-2 col-sm-5 col-12 order-sm-2 mr-4 bg-white border-3 border border-dark pb-5">
+            <form id="roast-search" class="pl-4">
                 <label for="roast-selection1">Roasting type:</label>
                 <select class="custom-select col-11" id="roast-selection1">
                     <option value="all" selected>all</option>
@@ -38,8 +38,8 @@
                 <input id="search1" type="text" class="col-11 mb-2 rounded">
                 <button id="roast-me" type="button" class="btn btn-primary col-11">Roast Me!</button>
             </form>
-            <hr>
-            <form id="add-roast">
+            <hr class="ml-3">
+            <form id="add-roast" class="pl-4">
                 <h2 class="d-flex justify-content-center">Add a Coffee</h2>
                 <label for="roast-selection2">Roasting type:</label>
                 <select class="custom-select col-11" id="roast-selection2">
@@ -53,7 +53,7 @@
             </form>
         </div>
 
-        <div class="roast-list container col-sm-5 col-xs-12 order-sm-1 bg-white border border-3 border-dark ml-1">
+        <div class="roast-list container col-sm-5 col-xs-12 order-sm-1 bg-white border border-3 border-dark ml-1 mr-sm-1 mr-2 ml-0 ml-sm-2">
             <div id="roast-results" class="row">
 
             </div>
