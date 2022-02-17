@@ -69,6 +69,10 @@ label {
     border-radius: 3%;
 }
 
+.roast-box {
+    display: flex;
+
+}
 #main-heading {
     border-radius: 15%;
 }
